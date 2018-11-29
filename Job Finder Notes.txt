@@ -1,0 +1,11 @@
+-If comapny = harvard, find salary grade info -- If below 056, next
+-Filter out anything that had PhD in description
+		--Going to have to figure out how to filter without a false positive if they mention that the boss is so and so, PhD
+		--Maybe the phrase "PhD in"
+		---Make sure that you still allow the phrase "masters or PhD", so maybe nix "PhD" but allow "or PhD"
+		---Maybe look for the presence of the phrase master's/masters and if they come up then don't nix it even if they have PhD
+-Look for jobs with the phrase "unlimited vacation" or "unlimited vacation policy"
+-Filter out "predoctoral" and "postdoctoral" and "postdoc"
+-search for numeric characters near the phrase "years of experience" and filter based on a numeric input
+-Look for jobs with the phrase "public policy"
+-NEED to check for duplicate links before writing the csv, different terms bring up the same jobs and doing a simple unique() on it isn't enough because of the terms variable making that row unique to another version of that listing
